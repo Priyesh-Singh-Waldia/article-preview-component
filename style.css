@@ -1,3 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --grayishBlue: hsl(212, 23%, 69%);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+  --white: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: var(--lightGrayishBlue);
+}
+
+/* 🎴 Card */
+.card {
+  width: 730px;
+  height: 280px;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 10px;
+
+  box-shadow: hsl(217, 19%, 35%, 0.2) 0px 20px 30px;
+}
+
+.left {
+  width: 285px;
+  object-fit: cover;
+  object-position: 5%;
+  border-radius: 10px 0 0 10px;
+}
+
+.right {
+  padding: 1rem 3rem;
+}
+
+.profile_pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom_card {
+  display: flex;
+  align-items: center;
+}
+
+/* Text */
+h1 {
+  font-size: 1.2rem;
+  color: var(--veryDarkGrayishBlue);
+}
+
+p {
+  padding-bottom: 0.8rem;
+  color: var(--desaturatedDarkBlue);
+}
+
+ul {
+  padding-left: 1rem;
+}
+ul li {
+  list-style: none;
+  padding-bottom: 0.1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.slim {
+  color: var(--desaturatedDarkBlue);
+}
+
+/* ⏩ Share */
+.share {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--lightGrayishBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share_icon {
+  width: 15px;
+}
+
+/* ✈️ Hover */
+.share:hover {
+  cursor: pointer;
+  background-color: var(--desaturatedDarkBlue);
+  color: var(--lightGrayishBlue);
+}
+
 /* 👣 Footer */
 .attribution {
   position: absolute;
@@ -6,7 +117,6 @@
   font-size: 14px;
   text-align: center;
   font-weight: 600;
-  color: var(--white);
 }
 .attribution a {
   color: hsl(228, 58%, 52%);
