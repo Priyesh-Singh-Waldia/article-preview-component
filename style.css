@@ -96,17 +96,16 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.share_icon {
-  width: 15px;
+  transition: color 0.3s ease-in-out;
 }
 
 /* ✈️ Hover */
 .share:hover {
   cursor: pointer;
   background-color: var(--desaturatedDarkBlue);
-  color: var(--lightGrayishBlue);
+}
+.share:hover .share_icon {
+  fill: var(--lightGrayishBlue);
 }
 
 /* 👣 Footer */
@@ -120,4 +119,25 @@ ul li {
 }
 .attribution a {
   color: hsl(228, 58%, 52%);
+}
+
+/* 🟨 For Tooltip JS Hoover Effect */
+.none {
+  display: none;
+}
+
+.display {
+  display: block;
+  position: absolute;
+  background-color: var(--desaturatedDarkBlue);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 1ch;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
 }
